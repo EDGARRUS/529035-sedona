@@ -22,34 +22,36 @@
     </nav>
   </header>
   <main>
-    <section> <!-- Бэкграунд Имейдж у CSS СЕКЦИИ img/filter_background.jpg -->
-
+    <section>
+      <!-- Бэкграунд Имейдж у CSS СЕКЦИИ img/filter_background.jpg -->
       <H1>Гостиницы в Седоне</H1>
       <!--Визуал Хидден -->
-      <!-- <form>
-
-<div>
-<b>ИНФРАСТРУКТУРА:</b>
-<input type="checkbox" checked>БАССЕЙН
-<input type="checkbox">ПАРКОВКА
-<input type="checkbox">WI-FI
-</div>
-
-<div>
-<b>ТИП ЖИЛЬЯ:</b>
-<input type="checkbox" checked>ГОСТИНИЦА
-<input type="checkbox" checked>МОТЕЛЬ
-<input type="checkbox" checked>АПАРТАМЕНТЫ
-</div>
-
-<div>
-<p>СТОИМОСТЬ В СУТКИ (Р)</p>
-<span>ОТ 0</span>
-<span>ДО 3000</span>
-<button>ПОКАЗАТЬ</button>
-</div>
-
-</form> -->
+      <form method="get" action="https://echo.htmlacademy.ru/">
+        <fieldset>
+          <legend>ИНФРАСТРУКТУРА:</legend>
+          <input type="checkbox" id="pool" name="pool" checked>
+          <label for="pool">БАССЕЙН</label>
+          <input type="checkbox" id="parking" name="parking">
+          <label for="parking">ПАРКОВКА</label>
+          <input type="checkbox" id="wifi" name="wifi">
+          <label for="wifi">WI-FI</label>
+        </fieldset>
+        <fieldset>
+          <legend>ТИП ЖИЛЬЯ:</legend>
+          <input type="checkbox" id="hotel" name="hotel" checked>
+          <label for="hotel">ГОСТИНИЦА</label>
+          <input type="checkbox" id="motel" name="motel" checked>
+          <label for="motel">МОТЕЛЬ</label>
+          <input type="checkbox" id="apart" name="apart" checked>
+          <label for="apart">АПАРТАМЕНТЫ</label>
+        </fieldset>
+        <fieldset>
+          <legend>СТОИМОСТЬ В СУТКИ (Р)</legend>
+          <span>ОТ 0</span>
+          <span>ДО 3000</span>
+          <button type="submit">ПОКАЗАТЬ</button>
+        </fieldset>
+      </form>
     </section>
     <section>
       <H2>Найденные гостиницы в Седоне</H2>
@@ -57,81 +59,85 @@
       <div>
         <span>Найдено: 3</span>
         <span>Сортировка:</span>
-        <span>По цене</span>
-        <span>По типу</span>
-        <span>По рейтингу</span>
-        <img src="strelki">
-      </div>
-      <article>
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По рейтингу</li>
+        </ul>
         <div>
-          <img src="img/1_hotel.jpg" width="135" height="90" alt="Гостиница Resort &amp; SPA">
+          <button type="button"><span class="visually-hidden">По возрастанию</span></button>
+          <button type="button"><span class="visually-hidden">По убыванию</span></button>
         </div>
-        <div>
-          <h3><a>Amara Resort &amp; SPA</a></h3>
+        <article>
           <div>
-            <p>Гостиница</p>
-            <button>Подробнее</button>
+            <img src="img/1_hotel.jpg" width="135" height="90" alt="Гостиница Resort &amp; SPA">
           </div>
           <div>
-            <p>от 4000 Р.</p>
-            <button>Забронировать</button>
-          </div>
-        </div>
-        <div>
-          <span>Звездочки</span>
-          <span>Рейтинг: 8,5</span>
-        </div>
-      </article>
-      <article>
-        <div>
-          <img src="img/2_hotel.jpg" width="135" height="90" alt="Мотель Deser Quail Inn">
-        </div>
-        <div>
-          <h3><a>Deser Quail Inn</a></h3>
-          <div>
-            <p>Мотель</p>
-            <button>Подробнее</button>
+            <h3><a>Amara Resort &amp; SPA</a></h3>
+            <div>
+              <p>Гостиница</p>
+              <button type="button">Подробнее</button>
+            </div>
+            <div>
+              <p>от 4000 Р.</p>
+              <button type="button">Забронировать</button>
+            </div>
           </div>
           <div>
-            <p>от 3000 Р.</p>
-            <button>ЗабронироватьЬ</button>
+            <span>Звездочки</span>
+            <span>Рейтинг: 8,5</span>
           </div>
-        </div>
-        <div>
-          <img src="/Zvezdoch">
-          <span>Рейтинг: 8,5</span>
-        </div>
-      </article>
-      <article>
-        <div>
+        </article>
+        <article>
+          <div>
+            <img src="img/2_hotel.jpg" width="135" height="90" alt="Мотель Deser Quail Inn">
+          </div>
+          <div>
+            <h3><a>Deser Quail Inn</a></h3>
+            <div>
+              <p>Мотель</p>
+              <button type="button">Подробнее</button>
+            </div>
+            <div>
+              <p>от 3000 Р.</p>
+              <button type="button">ЗабронироватьЬ</button>
+            </div>
+          </div>
+          <div>
+            <span>Звездочки</span>
+            <span>Рейтинг: 8,5</span>
+          </div>
+        </article>
+        <article>
+          <div>
             <img src="img/3_hotel.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
-        </div>
-        <div>
-          <h3><a>Villas at Poco Diablo</a></h3>
-          <div>
-            <p>Апартаменты</p>
-            <button>Подробнее</button>
           </div>
           <div>
-            <p>от 2000 Р.</p>
-            <button>Забронировать</button>
+            <h3><a>Villas at Poco Diablo</a></h3>
+            <div>
+              <p>Апартаменты</p>
+              <button type="button">Подробнее</button>
+            </div>
+            <div>
+              <p>от 2000 Р.</p>
+              <button type="button">Забронировать</button>
+            </div>
           </div>
-        </div>
-        <div>
-          <img src="/Zvezdoch">
-          <span>Рейтинг: 9,2</span>
-        </div>
-      </article>
+          <div>
+            <span>Звездочки</span>
+            <span>Рейтинг: 9,2</span>
+          </div>
+        </article>
     </section>
   </main>
   <footer>
     <div><span>#visitSEDONA</span></div>
     <div>
-      <div class="twitter"><a href="#"></a></div>
-      <div class="Facebook"><a href="#"></a></div>
-      <div class="Youtube"><a href="#"></a></div>
+      <div class="twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></div>
+      <div class="Facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></div>
+      <div class="Youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></div>
     </div>
-    <div><span>WEBSITE by<span><img src="/HTML ACADEMY"><div>
+    <div><span>WEBSITE by<span><img src="img/logo-htmlacademy.svg" width="115px" height="41" alt="Логотип"><div>
 
 </footer>
 

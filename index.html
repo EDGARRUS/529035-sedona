@@ -17,7 +17,7 @@
         <LI><a href="#">Информация</a></LI>
         <LI><a href="#">Фото и видео</a></LI>
         <LI><a href="#">Карта штата</a></LI>
-        <LI><a href="/catalog.html">Гостиницы</a></LI>
+        <LI><a href="catalog.html">Гостиницы</a></LI>
       </UL>
     </nav>
   </header>
@@ -83,26 +83,42 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button>Поиск гостиницы в Седоне</button>
-      <!--     <form> ДАТА ЗАЕЗДА
-24 АПРЕЛЯ 2017
-ДАТА ВЫЕЗДА
-4 ИЮЛЯ 2017
-ВЗРОСЛЫЕ
-2
-ДЕТИ
-0
-</form> -->
+      <form method="get" action="https://echo.htmlacademy.ru/">
+        <p>
+          <label for="in">Дата заезда:</label>
+          <input id="in" type="text" value="24 АПРЕЛЯ 2017" name="in">
+          <button type="button"><span class="visually-hidden">Календарь заезда</span></button>
+        </p>
+        <p>
+          <label for="out">Дата выезда:</label>
+          <input id="out" type="text" value="ИЮЛЯ 2017"  name="out">
+          <button type="button"><span class="visually-hidden">Календарь отъезда</span></button>
+        </p>
+        <p>
+          <label for="adult">Взрослые:</label>
+          <button type="button"><span class="visually-hidden">Минус</span></button>
+          <input id="adult" type="text" value="2" name="adult">
+          <button type="button"><span class="visually-hidden">Плюс</span></button>
+        </p>
+        <p>
+          <label for="children">Дети:</label>
+          <button type="button"><span class="visually-hidden">Минус</span></button>
+          <input id="children" type="text" value="0" name="children">
+          <button type="button"><span class="visually-hidden">Плюс</span></button>
+        </p>
+        <button type="submit">Найти</button>
+      </form>
       <div class="map"><img src="img/map.png" width="1200" height="593" alt="Карта Седоны"></div>
     </section>
   </main>
   <footer>
     <p>#visitSEDONA</p>
     <div>
-      <div class="twitter"><a href="#"></a></div>
-      <div class="Facebook"><a href="#"></a></div>
-      <div class="Youtube"><a href="#"></a></div>
+      <div class="twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></div>
+      <div class="Facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></div>
+      <div class="Youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></div>
     </div>
-    <div><span>WEBSITE by<span><a href="#"><img src="/HTML ACADEMY"></a><div>
+    <div><span>WEBSITE by<span><a href="#"><img src="img/logo-htmlacademy.svg" width="115px" height="41" alt="Логотип"></a><div>
 
 </footer>
 
