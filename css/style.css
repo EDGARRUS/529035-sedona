@@ -301,7 +301,9 @@
 
 
 
-
+.no-js .text-form {
+  display: block;
+}
 
 
 
@@ -394,6 +396,7 @@
     padding-right: 55px;
     padding-bottom: 55px;
     position: absolute;
+    display:none;
   }
 
 
@@ -480,6 +483,7 @@
   .website span {
     display: inline-block;
     color: black;
+    vertical-align: top;
   }
 
   .website a {
@@ -950,7 +954,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 57px;
   }
 
   .num1 {
@@ -958,7 +962,7 @@
   }
 
   .num2 {
-    margin-bottom: 23px;
+    margin-bottom: 30px;
   }
 
 
